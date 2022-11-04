@@ -1,6 +1,5 @@
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(pins.analogReadPin(AnalogPin.P1))
-    basic.pause(500)
 })
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Happy)
@@ -10,7 +9,6 @@ input.onButtonPressed(Button.B, function () {
         basic.showIcon(IconNames.Sad)
     }
     basic.pause(3000)
-    strip.showColor(neopixel.colors(NeoPixelColors.Black))
 })
 let strip: neopixel.Strip = null
 strip = neopixel.create(DigitalPin.P2, 1, NeoPixelMode.RGB)
